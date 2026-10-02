@@ -22,11 +22,6 @@ body {
     overflow: hidden;
 }
 
-
-/* =========================================
-   RESULT EDGE EFFECT
-========================================= */
-
 #edgeEffect {
     position: fixed;
     inset: 0;
@@ -128,11 +123,6 @@ body {
     }
 }
 
-
-/* =========================================
-   MAIN APP
-========================================= */
-
 .app {
     width: 100%;
     height: 100vh;
@@ -188,11 +178,6 @@ body {
             scale(1);
     }
 }
-
-
-/* =========================================
-   BRAND
-========================================= */
 
 .brand {
     margin-bottom: 20px;
@@ -283,11 +268,6 @@ body {
         transform: translateY(-4px);
     }
 }
-
-
-/* =========================================
-   INPUT
-========================================= */
 
 .input-wrapper {
     position: relative;
@@ -421,11 +401,6 @@ textarea:focus {
     }
 }
 
-
-/* =========================================
-   BUTTONS
-========================================= */
-
 .buttons {
     margin-top: 15px;
 
@@ -462,11 +437,6 @@ textarea:focus {
 .close-library {
     font-family: "Nunito", sans-serif;
 }
-
-
-/* =========================================
-   CHECK BUTTON
-========================================= */
 
 .primary-button {
     min-width: 165px;
@@ -550,11 +520,6 @@ textarea:focus {
     transform: translateX(5px);
 }
 
-
-/* =========================================
-   CLEAR BUTTON
-========================================= */
-
 .secondary-button {
     min-width: 100px;
 
@@ -613,11 +578,6 @@ textarea:focus {
     box-shadow:
         0 3px 0 #c9c7d4;
 }
-
-
-/* =========================================
-   LIBRARY BUTTON
-========================================= */
 
 .library-trigger {
     position: fixed;
@@ -685,11 +645,6 @@ textarea:focus {
 .library-icon {
     font-size: 17px;
 }
-
-
-/* =========================================
-   LOADING
-========================================= */
 
 .loading {
     display: none;
@@ -766,11 +721,6 @@ textarea:focus {
         opacity: 1;
     }
 }
-
-
-/* =========================================
-   RESULT CARD
-========================================= */
 
 #result {
     margin-top: 15px;
@@ -948,11 +898,6 @@ textarea:focus {
         transform: scale(1);
     }
 }
-
-
-/* =========================================
-   NEWS LIBRARY
-========================================= */
 
 .library {
     position: fixed;
@@ -1134,11 +1079,6 @@ textarea:focus {
     color: #c53c3c;
 }
 
-
-/* =========================================
-   OVERLAY
-========================================= */
-
 .overlay {
     position: fixed;
 
@@ -1161,11 +1101,6 @@ textarea:focus {
 
     visibility: visible;
 }
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
 
 @media (max-width: 650px) {
 
