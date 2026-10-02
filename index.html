@@ -2,134 +2,97 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>TruthLens</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 
-
 <body>
-
-    <!-- Result Edge Animation -->
-
     <div id="edgeEffect"></div>
-
-
-    <!-- Library Button -->
-
     <button class="library-trigger" onclick="toggleLibrary()">
         <span class="library-icon">☰</span>
         <span>News Library</span>
     </button>
-
-
-    <!-- News Library -->
-
     <aside id="library" class="library">
-
         <div class="library-header">
-
             <div>
                 <h2>📰 News Library</h2>
                 <p>Pick a sample to test TruthLens</p>
             </div>
-
-            <button class="close-library" onclick="toggleLibrary()">
-                ×
-            </button>
-
+            <button class="close-library" onclick="toggleLibrary()">×</button>
         </div>
-
-
+        
         <div class="sample-list">
-
             <div class="sample" onclick="loadSample(0)">
                 <span class="sample-tag fake-tag">FAKE DATASET</span>
                 <h3>Donald Trump Sends Out Embarrassing New Year’s Eve Message; This is Disturbing</h3>
                 <p>Donald Trump just couldn t wish all Americans a Happy New Year and leave it at that. Instead, he had to give a shout out to his enemies, haters and th...</p>
                 <small>News • 31-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(1)">
                 <span class="sample-tag fake-tag">FAKE DATASET</span>
                 <h3>Drunk Bragging Trump Staffer Started Russian Collusion Investigation</h3>
                 <p>House Intelligence Committee Chairman Devin Nunes is going to have a bad day. He s been under the assumption, like many of us, that the Christopher St...</p>
                 <small>News • 31-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(2)">
                 <span class="sample-tag fake-tag">FAKE DATASET</span>
                 <h3>Sheriff David Clarke Becomes An Internet Joke For Threatening To Poke People ‘In The Eye’</h3>
                 <p>On Friday, it was revealed that former Milwaukee Sheriff David Clarke, who was being considered for Homeland Security Secretary in Donald Trump s admi...</p>
                 <small>News • 30-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(3)">
                 <span class="sample-tag fake-tag">FAKE DATASET</span>
                 <h3>Trump Is So Obsessed He Even Has Obama’s Name Coded Into His Website (IMAGES)</h3>
                 <p>On Christmas day, Donald Trump announced that he would be back to work the following day, but he is golfing for the fourth day in a row. The former re...</p>
                 <small>News • 29-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(4)">
                 <span class="sample-tag fake-tag">FAKE DATASET</span>
                 <h3>Pope Francis Just Called Out Donald Trump During His Christmas Speech</h3>
                 <p>Pope Francis used his annual Christmas Day message to rebuke Donald Trump without even mentioning his name. The Pope delivered his message just days a...</p>
                 <small>News • 25-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(5)">
                 <span class="sample-tag fake-tag">FAKE DATASET</span>
                 <h3>Racist Alabama Cops Brutalize Black Boy While He Is In Handcuffs (GRAPHIC IMAGES)</h3>
                 <p>The number of cases of cops brutalizing and killing people of color seems to see no end. Now, we have another case that needs to be shared far and wid...</p>
                 <small>News • 25-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(6)">
                 <span class="sample-tag real-tag">REAL DATASET</span>
                 <h3>As U.S. budget fight looms, Republicans flip their fiscal script</h3>
                 <p>WASHINGTON (Reuters) - The head of a conservative Republican faction in the U.S. Congress, who voted this month for a huge expansion of the national d...</p>
                 <small>politicsNews • 31-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(7)">
                 <span class="sample-tag real-tag">REAL DATASET</span>
                 <h3>U.S. military to accept transgender recruits on Monday: Pentagon</h3>
                 <p>WASHINGTON (Reuters) - Transgender people will be allowed for the first time to enlist in the U.S. military starting on Monday as ordered by federal c...</p>
                 <small>politicsNews • 29-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(8)">
                 <span class="sample-tag real-tag">REAL DATASET</span>
                 <h3>Senior U.S. Republican senator: &#x27;Let Mr. Mueller do his job&#x27;</h3>
                 <p>WASHINGTON (Reuters) - The special counsel investigation of links between Russia and President Trump’s 2016 election campaign should continue without ...</p>
                 <small>politicsNews • 31-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(9)">
                 <span class="sample-tag real-tag">REAL DATASET</span>
                 <h3>FBI Russia probe helped by Australian diplomat tip-off: NYT</h3>
                 <p>WASHINGTON (Reuters) - Trump campaign adviser George Papadopoulos told an Australian diplomat in May 2016 that Russia had political dirt on Democratic...</p>
                 <small>politicsNews • 30-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(10)">
                 <span class="sample-tag real-tag">REAL DATASET</span>
                 <h3>Trump wants Postal Service to charge &#x27;much more&#x27; for Amazon shipments</h3>
                 <p>SEATTLE/WASHINGTON (Reuters) - President Donald Trump called on the U.S. Postal Service on Friday to charge “much more” to ship packages for Amazon (A...</p>
                 <small>politicsNews • 29-Dec-17</small>
             </div>
-
             <div class="sample" onclick="loadSample(11)">
                 <span class="sample-tag real-tag">REAL DATASET</span>
                 <h3>White House, Congress prepare for talks on spending, immigration</h3>
@@ -137,215 +100,115 @@
                 <small>politicsNews • 29-Dec-17</small>
             </div>
         </div>
-
-
+        
             <div class="sample" onclick="loadSample(1)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>AI Research Investment</h3>
                 <p>A technology company announces plans to expand its artificial intelligence research...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(2)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>Urban Green Spaces Study</h3>
                 <p>Researchers examine how vegetation can influence temperatures in densely populated cities...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(3)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>New Digital Education Program</h3>
                 <p>A government initiative aims to improve access to digital education for students...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(4)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>Space Research Mission</h3>
                 <p>Scientists prepare a research mission designed to study atmospheric conditions...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(5)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>Electric Vehicle Development</h3>
                 <p>Researchers are developing improved battery technology to increase electric vehicle range...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(6)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>Plants Producing Electricity</h3>
                 <p>A viral report claims ordinary household plants can generate enough electricity to power homes...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(7)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>Ten-Year Smartphone Battery</h3>
                 <p>A mysterious company allegedly develops a smartphone battery that never needs charging...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(8)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>AI Dream Prediction</h3>
                 <p>A viral report claims artificial intelligence can predict exactly what people will dream...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(9)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>Faster-Than-Light Cars</h3>
                 <p>A social media report claims scientists have developed cars capable of travelling faster than light...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(10)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>Invisible Smartphone Technology</h3>
                 <p>An online article claims a company has developed a phone that can become completely invisible...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(11)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>Human Teleportation Device</h3>
                 <p>A sensational report claims scientists have successfully teleported a human across continents...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(12)">
                 <span class="sample-tag fake-tag">FAKE-STYLE</span>
                 <h3>Seven-Day Sleep Miracle</h3>
                 <p>A viral article claims a new device allows people to replace weeks of sleep with just minutes...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(13)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>Global AI Guidelines</h3>
                 <p>Organizations continue developing guidelines for responsible artificial intelligence use...</p>
             </div>
-
-
             <div class="sample" onclick="loadSample(14)">
                 <span class="sample-tag real-tag">REAL-STYLE</span>
                 <h3>Public Health Research</h3>
                 <p>Researchers publish findings from a study examining factors affecting community health...</p>
             </div>
-
-
         </div>
-
     </aside>
 
-
-    <!-- Overlay -->
-
     <div id="overlay" class="overlay" onclick="toggleLibrary()"></div>
-
-
-    <!-- Main App -->
-
     <main class="app">
-
         <div class="app-content">
-
-
             <div class="brand">
-
                 <div class="logo-bubble">🔎</div>
-
                 <h1>TruthLens</h1>
-
-                <p>
-                    Let's find out what the AI thinks.
-                </p>
-
+                <p>Let's find out what the AI thinks.</p>
             </div>
-
-
             <div class="input-wrapper">
-
-                <div class="input-label">
-                    📝 Paste your news article
-                </div>
-
-                <textarea
-                    id="newsText"
-                    placeholder="Drop a news article here..."
-                ></textarea>
-
-                <div class="character-hint">
-                    Paste the full article for a better classification.
-                </div>
-
+                <div class="input-label">📝 Paste your news article</div>
+                <textarea id="newsText" placeholder="Drop a news article here..."></textarea>
+                <div class="character-hint">Paste the full article for a better classification.</div>
             </div>
-
-
             <div class="buttons">
-
-
-                <button
-                    onclick="checkNews()"
-                    id="checkButton"
-                    class="primary-button"
-                >
-
+                <button onclick="checkNews()" id="checkButton" class="primary-button">
                     <span>Check News</span>
-
                     <span class="button-arrow">➜</span>
-
                 </button>
-
-
-                <button
-                    onclick="clearNews()"
-                    class="secondary-button"
-                >
-
+                <button onclick="clearNews()" class="secondary-button">
                     <span>Clear</span>
-
                     <span>↺</span>
-
                 </button>
-
-
             </div>
-
-
-            <!-- Loading -->
-
             <div id="loading" class="loading">
-
                 <div class="loading-dots">
-
                     <span></span>
                     <span></span>
                     <span></span>
-
                 </div>
-
                 <p>TruthLens is thinking...</p>
-
             </div>
-
-
-            <!-- Result -->
-
             <div id="result"></div>
-
-
         </div>
-
     </main>
-
-
     <script>
-
-
         const samples = [
             "Donald Trump Sends Out Embarrassing New Year’s Eve Message; This is Disturbing\n\nDonald Trump just couldn t wish all Americans a Happy New Year and leave it at that. Instead, he had to give a shout out to his enemies, haters and  the very dishonest fake news media.  The former reality show star had just one job to do and he couldn t do it. As our Country rapidly grows stronger and smarter, I want to wish all of my friends, supporters, enemies, haters, and even the very dishonest Fake News Media, a Happy and Healthy New Year,  President Angry Pants tweeted.  2018 will be a great year for America! As our Country rapidly grows stronger and smarter, I want to wish all of my friends, supporters, enemies, haters, and even the very dishonest Fake News Media, a Happy and Healthy New Year. 2018 will be a great year for America!  Donald J. Trump (@realDonaldTrump) December 31, 2017Trump s tweet went down about as welll as you d expect.What kind of president sends a New Year s greeting like this despicable, petty, infantile gibberish? Only Trump! His lack of decency won t even allow him to rise above the gutter long enough to wish the American citizens a happy new year!  Bishop Talbert Swan (@TalbertSwan) December 31, 2017no one likes you  Calvin (@calvinstowell) December 31, 2017Your impeachment would make 2018 a great year for America, but I ll also accept regaining control of Congress.  Miranda Yaver (@mirandayaver) December 31, 2017Do you hear yourself talk? When you have to include that many people that hate you you have to wonder? Why do the they all hate me?  Alan Sandoval (@AlanSandoval13) December 31, 2017Who uses the word Haters in a New Years wish??  Marlene (@marlene399) December 31, 2017You can t just say happy new year?  Koren pollitt (@Korencarpenter) December 31, 2017Here s Trump s New Year s Eve tweet from 2016.Happy New Year to all, including to my many enemies and those who have fought me and lost so badly they just don t know what to do. Love!  Donald J. Trump (@realDonaldTrump) December 31, 2016This is nothing new for Trump. He s been doing this for years.Trump has directed messages to his  enemies  and  haters  for New Year s, Easter, Thanksgiving, and the anniversary of 9/11. pic.twitter.com/4FPAe2KypA  Daniel Dale (@ddale8) December 31, 2017Trump s holiday tweets are clearly not presidential.How long did he work at Hallmark before becoming President?  Steven Goodine (@SGoodine) December 31, 2017He s always been like this . . . the only difference is that in the last few years, his filter has been breaking down.  Roy Schulze (@thbthttt) December 31, 2017Who, apart from a teenager uses the term haters?  Wendy (@WendyWhistles) December 31, 2017he s a fucking 5 year old  Who Knows (@rainyday80) December 31, 2017So, to all the people who voted for this a hole thinking he would change once he got into power, you were wrong! 70-year-old men don t change and now he s a year older.Photo by Andrew Burton/Getty Images.",
             "Drunk Bragging Trump Staffer Started Russian Collusion Investigation\n\nHouse Intelligence Committee Chairman Devin Nunes is going to have a bad day. He s been under the assumption, like many of us, that the Christopher Steele-dossier was what prompted the Russia investigation so he s been lashing out at the Department of Justice and the FBI in order to protect Trump. As it happens, the dossier is not what started the investigation, according to documents obtained by the New York Times.Former Trump campaign adviser George Papadopoulos was drunk in a wine bar when he revealed knowledge of Russian opposition research on Hillary Clinton.On top of that, Papadopoulos wasn t just a covfefe boy for Trump, as his administration has alleged. He had a much larger role, but none so damning as being a drunken fool in a wine bar. Coffee boys  don t help to arrange a New York meeting between Trump and President Abdel Fattah el-Sisi of Egypt two months before the election. It was known before that the former aide set up meetings with world leaders for Trump, but team Trump ran with him being merely a coffee boy.In May 2016, Papadopoulos revealed to Australian diplomat Alexander Downer that Russian officials were shopping around possible dirt on then-Democratic presidential nominee Hillary Clinton. Exactly how much Mr. Papadopoulos said that night at the Kensington Wine Rooms with the Australian, Alexander Downer, is unclear,  the report states.  But two months later, when leaked Democratic emails began appearing online, Australian officials passed the information about Mr. Papadopoulos to their American counterparts, according to four current and former American and foreign officials with direct knowledge of the Australians  role. Papadopoulos pleaded guilty to lying to the F.B.I. and is now a cooperating witness with Special Counsel Robert Mueller s team.This isn t a presidency. It s a badly scripted reality TV show.Photo by Win McNamee/Getty Images.",
