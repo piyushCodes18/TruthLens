@@ -22,6 +22,7 @@ body {
     overflow: hidden;
 }
 
+
 #edgeEffect {
     position: fixed;
     inset: 0;
@@ -579,6 +580,7 @@ textarea:focus {
         0 3px 0 #c9c7d4;
 }
 
+
 .library-trigger {
     position: fixed;
 
@@ -812,7 +814,6 @@ textarea:focus {
 }
 
 
-/* REAL RESULT */
 
 .real {
     border: 2px solid #a9e7bf;
@@ -833,8 +834,6 @@ textarea:focus {
     color: #188d4b;
 }
 
-
-/* FAKE RESULT */
 
 .fake {
     border: 2px solid #f2aaaa;
@@ -898,6 +897,7 @@ textarea:focus {
         transform: scale(1);
     }
 }
+
 
 .library {
     position: fixed;
